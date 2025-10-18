@@ -34,7 +34,7 @@ The script supports two main commands: `publish` and `subscribe`.
 
 ### Publishing Messages
 
-Send a messages to a topic:
+Send messages to a topic:
 
 ```bash
 node script.js publish <topic>
