@@ -7,7 +7,7 @@ A simple Node.js MQTT publisher/subscriber demo using RabbitMQ as the message br
 ### 1. Clone/Download the Project
 
 ```bash
-git clone <your-repo-url>
+git clone https://github.com/lephantriduc/PubSub-Simple-Demo
 cd pub-sub-demo
 ```
 
@@ -37,16 +37,9 @@ The script supports two main commands: `publish` and `subscribe`.
 Send a single message to a topic:
 
 ```bash
-node script.js publish <topic> <message>
+node script.js publish <topic>
 ```
-
-**Examples:**
-
-```bash
-node script.js publish weather "Sunny, 25°C"
-node script.js publish chat/room1 "Hello everyone!"
-node script.js publish sensors/temperature "22.5"
-```
+It will automatically send messages into that topic with the rate of 0.5 messages/s.
 
 ### Subscribing to Topics
 
@@ -64,9 +57,6 @@ node script.js subscribe weather
 
 # Subscribe to multiple topics
 node script.js subscribe chat/room1 chat/room2 notifications
-
-# Subscribe to sensor data
-node script.js subscribe sensors/temperature sensors/humidity sensors/pressure
 ```
 
 The subscriber will:

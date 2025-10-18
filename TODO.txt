@@ -1,5 +1,0 @@
-node script.js publish a/b
-
-publish a/c
-
-node script.js subscribe a,b,c
